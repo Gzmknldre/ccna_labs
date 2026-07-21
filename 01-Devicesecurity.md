@@ -15,10 +15,10 @@ Configure basic security settings on Cisco devices.
 
 ## What I Learned
 
-- "enable secret" is more secure than "enable password"
-- "enable secret" is stored as a hash and takes precedence over 1enable password"
-- "service password-encryption" encrypts plain-text passwords in the configuration
-- The running configuration can be saved using 'copy running-config startup-config''write''write memory'
+- `enable secret` is more secure than `enable password`.
+- `enable secret` is stored as a hash and takes precedence over `enable password`.
+- `service password-encryption` encrypts plain-text passwords in the configuration.
+- The running configuration can be saved using `copy running-config startup-config`, `write`, or `write memory`.
 
 
 <img width="415" height="358" alt="show_running-config" src="https://github.com/user-attachments/assets/9748e9fa-3ae6-451f-842d-9a4ce2b3b99d" />
