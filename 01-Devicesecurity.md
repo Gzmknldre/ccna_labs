@@ -21,4 +21,8 @@ Configure basic security settings on Cisco devices.
 - The running configuration can be saved using 'copy running-config startup-config''write''write memory'
 
 
+<img width="415" height="358" alt="show_running-config" src="https://github.com/user-attachments/assets/9748e9fa-3ae6-451f-842d-9a4ce2b3b99d" />
+
+<img width="538" height="399" alt="basic_device_security" src="https://github.com/user-attachments/assets/135a84a1-3897-4e81-b086-264d9d55d577" />
+
 
