@@ -12,7 +12,7 @@ Understand how ARP resolves an IPv4 address to a MAC address.
 
 ## Commands Used
 - arp -a
-- show arp
+- ping
 - show mac adress-table
 - clear mac adress-table dynamic
 
