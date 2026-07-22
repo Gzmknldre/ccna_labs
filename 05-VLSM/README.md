@@ -17,6 +17,7 @@ Design a network using VLSM and configure router interfaces with the correct IP 
 - Each subnet has a unique network address and broadcast address.
 - Router interfaces must be configured with a valid IP address and subnet mask.
 - The last usable IP address can be assigned to a router interface.
+- Point-to-point links commonly use a `/30` subnet because only two usable IP addresses are required.
 - `show ip interface brief` verifies interface status and IP addressing.
 
 ## Verification
