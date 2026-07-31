@@ -47,6 +47,20 @@ Learn how STP enhancements improve network performance and protect the network f
 - Prevents unauthorized switches from becoming the Root Bridge.
 - Places the port into the Root-Inconsistent state when necessary.
 
+## Root Bridge Configuration
+
+### Commands Used
+
+- `spanning-tree vlan <VLAN-ID> root primary`
+- `spanning-tree vlan <VLAN-ID> root secondary`
+
+### What I Learned
+
+- `spanning-tree vlan 1 root primary` configures the switch as the preferred Root Bridge for VLAN 1.
+- `spanning-tree vlan 1 root secondary` configures the switch as the backup Root Bridge.
+- Cisco automatically adjusts the bridge priority when these commands are used.
+- These commands are easier than manually configuring the bridge priority.
+
 ## Common Mistakes
 
 - Enabling PortFast on trunk links or switch-to-switch links.
