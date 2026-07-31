@@ -26,6 +26,14 @@ Configure VTP to synchronize VLAN information between Cisco switches.
 - A VTP password can be configured for authentication.
 - `show vtp status` displays the VTP operating mode, domain name, and revision number.
 - VLAN changes made on a VTP Server are propagated to VTP Clients.
+-  The VTP revision number increases whenever the VLAN database is modified on a VTP Server.
+- VTP Clients update their VLAN database when they receive advertisements with a higher revision number.
+- A switch with a higher revision number can overwrite the VLAN database of other switches in the same VTP domain.
+
+  ## Important Notes
+
+- Always verify the VTP revision number before adding a switch to an existing VTP domain.
+- A higher revision number can overwrite the VLAN database on other switches.
 
 ## Verification
 
