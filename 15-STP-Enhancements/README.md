@@ -13,7 +13,7 @@ Learn how STP enhancements improve network performance and protect the network f
 - `spanning-tree bpdufilter enable`
 - `spanning-tree guard root`
 - `show spanning-tree interface`
-- `spanning-tree link-type`
+- `spanning-tree link-type point-to-point`
 - `show spanning-tree summary`
 - `spanning-tree vlan 1 cost`
 - `spanning-tree vlan 1 priority `
