@@ -16,6 +16,7 @@ Configure EtherChannel to combine multiple physical links into a single logical 
 - `show etherchannel summary`
 - `show etherchannel port-channel`
 - `show etherchannel load-balance`
+- `port-channel load-balance method(src-dst-mac)`
 - `show interfaces port-channel`
 - `show interfaces trunk`
 
