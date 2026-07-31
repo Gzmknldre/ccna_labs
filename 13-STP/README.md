@@ -7,6 +7,8 @@ Understand how Spanning Tree Protocol (STP) prevents Layer 2 loops and creates a
 ## Commands Used
 
 - `show spanning-tree`
+- `show spanning-tree detail`
+- `show spanning-tree summaary`
 - `show spanning-tree vlan`
 - `show spanning-tree root`
 - `spanning-tree vlan <VLAN-ID> priority <value>`
