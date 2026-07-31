@@ -15,6 +15,7 @@ Configure EtherChannel to combine multiple physical links into a single logical 
 - `switchport trunk allowed vlan`
 - `show etherchannel summary`
 - `show etherchannel port-channel`
+- `show etherchannel load-balance`
 - `show interfaces port-channel`
 - `show interfaces trunk`
 
