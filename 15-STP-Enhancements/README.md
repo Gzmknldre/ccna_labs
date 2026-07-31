@@ -14,6 +14,7 @@ Learn how STP enhancements improve network performance and protect the network f
 - `spanning-tree guard root`
 - `show spanning-tree interface`
 - `show spanning-tree summary`
+- `spanning-tree vlan 1 cost`
 
 ## What I Learned
 
