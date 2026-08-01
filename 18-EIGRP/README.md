@@ -9,6 +9,7 @@ Configure EIGRP to dynamically exchange routing information between routers.
 - `router eigrp <AS-number>`
 - `network`
 - `no auto-summary`
+- `passive-interface l0`
 - `show ip protocols`
 - `show ip route`
 - `show ip eigrp neighbors`
