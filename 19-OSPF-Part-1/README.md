@@ -11,6 +11,7 @@ Configure OSPF to dynamically exchange routing information between routers.
 - `show ip ospf neighbor`
 - `show ip ospf interface brief`
 - `show ip protocols`
+- `passive-interface`
 - `show ip route`
 - `ping`
 
