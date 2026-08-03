@@ -11,6 +11,7 @@ Understand how OSPF calculates the best path using cost and learn the OSPF neigh
 - `show ip route`
 - `ip ospf cost`
 - `bandwidth`
+- `auto-cost reference-bandwidth `
 
 ## What I Learned
 
@@ -20,6 +21,7 @@ Understand how OSPF calculates the best path using cost and learn the OSPF neigh
 - The OSPF cost can be manually configured using the `ip ospf cost` command.
 - Changing the interface bandwidth changes the calculated OSPF cost.
 - OSPF routers must become neighbors before exchanging routing information.
+- Hello messages are multicast 224.0.0.5
 
 ## OSPF Neighbor States
 
