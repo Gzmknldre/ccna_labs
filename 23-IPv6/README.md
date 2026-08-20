@@ -49,45 +49,81 @@ Understand IPv6 addressing, address types, EUI-64, IPv6 routing, multicast scope
 - `FFFE` is inserted between the two parts.
 - The Universal/Local (U/L) bit is inverted.
 
-Example:
+
+## IPv6 Enable
 
 ```bash
-ipv6 address 2001:DB8:1:1::/64 eui-64
-
-
-
-##IPv6 Enable
-
 interface g0/0
 ipv6 enable
-ipv6 enable enables IPv6 processing on the interface.
-It automatically generates a link-local IPv6 address.
-A global IPv6 address does not have to be configured for the interface to have a link-local address.
-IPv6 Static Routing
+```
+
+* Enables IPv6 processing on the interface.
+* Automatically generates a **Link-Local** IPv6 address.
+* A Global Unicast address does not need to be configured to have a Link-Local address.
+
+---
+
+## IPv6 Static Routing
+
+```bash
 ipv6 route 2001:DB8:2:2::/64 2001:DB8:1:2::2
-IPv6 static routes are configured using ipv6 route.
-The destination is specified using an IPv6 prefix and prefix length.
-A next-hop IPv6 address can be specified.
+```
 
-##Multicast Scopes
+* IPv6 static routes are configured using `ipv6 route`.
+* The destination is specified using an IPv6 prefix and prefix length.
+* A next-hop IPv6 address can be specified.
+* Use `ipv6 route`, **not** `ip route`, for IPv6 networks.
 
-IPv6 multicast addresses contain a scope field.
-The scope determines the range within which multicast traffic is valid.
-Different scopes are used for different communication ranges.
+---
 
-##Common Mistakes
+## IPv6 Multicast Scopes
 
-Forgetting that IPv6 does not use broadcast.
-Confusing link-local addresses with global unicast addresses.
-Forgetting the prefix length when configuring IPv6 addresses.
-Using ip route instead of ipv6 route for IPv6 static routing.
-Forgetting that ipv6 enable automatically creates a link-local address.
-Confusing multicast scopes and their ranges.
+IPv6 does **not use broadcast**. Multicast is used instead.
 
+IPv6 multicast addresses contain a **Scope** field that determines the range within which multicast traffic is valid.
 
-##Verification
+Common scopes:
 
+* **1 – Interface-Local:** Limited to a single interface.
+* **2 – Link-Local:** Limited to the local link.
+* **5 – Site-Local:** Limited to a site/organization.
+* **8 – Organization-Local:** Limited to an organization.
+* **E – Global:** Global scope.
+
+---
+
+## IPv6 Address Types
+
+* **Global Unicast:** Routable on the Internet.
+* **Link-Local:** `FE80::/10` — used for communication on the local link.
+* **Unique Local:** `FC00::/7` — private IPv6 addressing.
+* **Multicast:** `FF00::/8` — one-to-many communication.
+* **Loopback:** `::1`
+* **Unspecified:** `::`
+
+---
+
+## Common Mistakes
+
+* Forgetting that IPv6 does **not use broadcast**.
+* Confusing **Link-Local** and **Global Unicast** addresses.
+* Forgetting the **prefix length** when configuring IPv6 addresses.
+* Using `ip route` instead of `ipv6 route`.
+* Forgetting that `ipv6 enable` automatically creates a Link-Local address.
+* Confusing multicast scopes and their ranges.
+
+---
+
+## Verification
+
+```bash
 show ipv6 interface
 show ipv6 interface brief
+show ipv6 interface g0/0
 show ipv6 route
 ping
+```
+
+### Key Point
+
+> IPv6 uses **multicast instead of broadcast**, Link-Local addresses are automatically generated with `ipv6 enable`, and IPv6 static routes use `ipv6 route`.
