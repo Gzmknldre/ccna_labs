@@ -50,7 +50,6 @@ ipconfig /flushdns
 ```bash
 ip name-server 8.8.8.8
 ```
-
 Configures a DNS server that the device can use for name resolution.
 
 ## Verification
