@@ -43,10 +43,7 @@ ipconfig /flushdns
 | NS | Specifies name servers |
 | PTR | Reverse DNS lookup |
 
-## Recursive Query
 
-- The client sends a recursive query to a DNS server.
-- The DNS server is responsible for finding the requested information and returning the answer to the client.
 
 ## Cisco DNS Configuration
 
