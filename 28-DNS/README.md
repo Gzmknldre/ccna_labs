@@ -8,6 +8,7 @@ Understand how DNS resolves domain names to IP addresses and how DNS queries wor
 
 ```bash
 ip name-server <IP-address>
+ip host <hostname> <IP-address>
 show hosts
 nslookup
 ping <hostname>
