@@ -35,21 +35,32 @@ Understand how SNMP is used to monitor and manage network devices.
 
 ## SNMP Operations
 
+
 ### GET
 
-The manager requests information from the SNMP agent.
-
-### SET
-
-The manager changes a value on the SNMP agent.
+The SNMP manager requests information from the SNMP agent.
 
 ### GETNEXT
 
-Used to retrieve the next object in the MIB.
+The manager requests the next object in the MIB.
+
+### SET
+
+The SNMP manager changes a value on the SNMP agent.
+
+### RESPONSE
+
+The SNMP agent sends a response back to the SNMP manager after receiving a GET, GETNEXT, or SET request.
 
 ### TRAP
 
-The SNMP agent sends an unsolicited notification to the manager when an event occurs.
+The SNMP agent sends an unsolicited notification to the SNMP manager when an event occurs.
+
+### INFORM
+
+Similar to a TRAP, but the SNMP manager sends an acknowledgment (response) to confirm that the notification was received.
+
+
 
 ## SNMP Versions
 
