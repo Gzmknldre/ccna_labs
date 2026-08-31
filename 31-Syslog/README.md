@@ -20,6 +20,7 @@ show logging
 - Syslog messages have different severity levels.
 - Lower severity numbers indicate more serious events.
 - Severity levels range from `0` (most severe) to `7` (least severe).
+- Port 514 is the default port assigned to Syslog, a standard protocol used to send system event messages from one device to another over a network.
 
 ## Syslog Severity Levels
 
